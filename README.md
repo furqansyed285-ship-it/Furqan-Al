@@ -1,9 +1,15 @@
-# Furqan AI
+# Furqan AI Backend
 
-Basic Android AI-chat MVP.
+This is the real-AI server for the Android app.
 
-## Build
-Open this folder in Android Studio, let Gradle sync, then Build > Build APK(s).
+1. Install Node.js 20+.
+2. Run `npm install`.
+3. Set `OPENAI_API_KEY` as a server environment variable.
+4. Optionally set `OPENAI_MODEL`.
+5. Run `npm start`.
+6. Deploy this backend on a service that gives you an HTTPS URL.
+7. Put that HTTPS `/chat` URL into MainActivity.kt as BACKEND_URL.
+8. Rebuild the Android app.
 
-## Important
-The current reply is a demo. For production, connect the app to a secure backend that calls your chosen AI API. Do NOT put a secret API key directly in the Android app.
+SECURITY:
+Never put OPENAI_API_KEY in the Android APK. OpenAI's API documentation explicitly recommends keeping API keys secret and loading them server-side.
