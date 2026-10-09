@@ -1,0 +1,14 @@
+Furqan AI - Phone-only APK build
+
+This project includes a GitHub Actions workflow that builds the Android APK in the cloud.
+From a Xiaomi/Android phone:
+1. Create/sign in to a GitHub account.
+2. Create a new repository.
+3. Upload all files from this folder to the repository.
+4. Open Actions -> Build Furqan AI APK -> Run workflow.
+5. After the workflow finishes, open the run and download the "FurqanAI-debug-apk" artifact.
+6. Extract the ZIP and install app-debug.apk.
+
+IMPORTANT:
+- The APK's AI backend URL is still a placeholder until a real HTTPS backend is deployed.
+- Never put an OpenAI API key directly inside the Android app. Keep the key on the server.
